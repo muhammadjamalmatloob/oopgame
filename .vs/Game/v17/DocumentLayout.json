@@ -1,0 +1,147 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Game\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EEA2943C-4446-4CD8-B1CB-73D8FF6CC7BB}|Game\\Game.csproj|d:\\game\\game\\gameview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEA2943C-4446-4CD8-B1CB-73D8FF6CC7BB}|Game\\Game.csproj|solutionrelative:game\\gameview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEA2943C-4446-4CD8-B1CB-73D8FF6CC7BB}|Game\\Game.csproj|D:\\Game\\game\\mainmenu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEA2943C-4446-4CD8-B1CB-73D8FF6CC7BB}|Game\\Game.csproj|solutionrelative:game\\mainmenu.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEA2943C-4446-4CD8-B1CB-73D8FF6CC7BB}|Game\\Game.csproj|D:\\Game\\game\\load.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEA2943C-4446-4CD8-B1CB-73D8FF6CC7BB}|Game\\Game.csproj|solutionrelative:game\\load.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEA2943C-4446-4CD8-B1CB-73D8FF6CC7BB}|Game\\Game.csproj|D:\\Game\\game\\gameview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EEA2943C-4446-4CD8-B1CB-73D8FF6CC7BB}|Game\\Game.csproj|solutionrelative:game\\gameview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEA2943C-4446-4CD8-B1CB-73D8FF6CC7BB}|Game\\Game.csproj|D:\\Game\\game\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EEA2943C-4446-4CD8-B1CB-73D8FF6CC7BB}|Game\\Game.csproj|solutionrelative:game\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEA2943C-4446-4CD8-B1CB-73D8FF6CC7BB}|Game\\Game.csproj|D:\\Game\\game\\load.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EEA2943C-4446-4CD8-B1CB-73D8FF6CC7BB}|Game\\Game.csproj|solutionrelative:game\\load.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEA2943C-4446-4CD8-B1CB-73D8FF6CC7BB}|Game\\Game.csproj|D:\\Game\\game\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEA2943C-4446-4CD8-B1CB-73D8FF6CC7BB}|Game\\Game.csproj|solutionrelative:game\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEA2943C-4446-4CD8-B1CB-73D8FF6CC7BB}|Game\\Game.csproj|D:\\Game\\game\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEA2943C-4446-4CD8-B1CB-73D8FF6CC7BB}|Game\\Game.csproj|solutionrelative:game\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GameView.cs [Design]",
+              "DocumentMoniker": "D:\\Game\\Game\\GameView.cs",
+              "RelativeDocumentMoniker": "Game\\GameView.cs",
+              "ToolTip": "D:\\Game\\Game\\GameView.cs [Design]",
+              "RelativeToolTip": "Game\\GameView.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T13:48:24.905Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainMenu.Designer.cs",
+              "DocumentMoniker": "D:\\Game\\Game\\MainMenu.Designer.cs",
+              "RelativeDocumentMoniker": "Game\\MainMenu.Designer.cs",
+              "ToolTip": "D:\\Game\\Game\\MainMenu.Designer.cs",
+              "RelativeToolTip": "Game\\MainMenu.Designer.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAcwCkAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T13:29:50.396Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Load.cs",
+              "DocumentMoniker": "D:\\Game\\Game\\Load.cs",
+              "RelativeDocumentMoniker": "Game\\Load.cs",
+              "ToolTip": "D:\\Game\\Game\\Load.cs",
+              "RelativeToolTip": "Game\\Load.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAowB8AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T13:11:40.563Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Load.cs [Design]",
+              "DocumentMoniker": "D:\\Game\\Game\\Load.cs",
+              "RelativeDocumentMoniker": "Game\\Load.cs",
+              "ToolTip": "D:\\Game\\Game\\Load.cs [Design]",
+              "RelativeToolTip": "Game\\Load.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T13:05:40.965Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainMenu.cs",
+              "DocumentMoniker": "D:\\Game\\Game\\MainMenu.cs",
+              "RelativeDocumentMoniker": "Game\\MainMenu.cs",
+              "ToolTip": "D:\\Game\\Game\\MainMenu.cs",
+              "RelativeToolTip": "Game\\MainMenu.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAwwBUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T12:34:54.523Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainMenu.cs [Design]",
+              "DocumentMoniker": "D:\\Game\\Game\\MainMenu.cs",
+              "RelativeDocumentMoniker": "Game\\MainMenu.cs",
+              "ToolTip": "D:\\Game\\Game\\MainMenu.cs [Design]",
+              "RelativeToolTip": "Game\\MainMenu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T12:32:26.578Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GameView.cs",
+              "DocumentMoniker": "D:\\Game\\Game\\GameView.cs",
+              "RelativeDocumentMoniker": "Game\\GameView.cs",
+              "ToolTip": "D:\\Game\\Game\\GameView.cs",
+              "RelativeToolTip": "Game\\GameView.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAIwEcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T14:05:04.111Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Game\\Game\\Program.cs",
+              "RelativeDocumentMoniker": "Game\\Program.cs",
+              "ToolTip": "D:\\Game\\Game\\Program.cs",
+              "RelativeToolTip": "Game\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-12T13:14:30.735Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
