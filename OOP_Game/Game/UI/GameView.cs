@@ -10,27 +10,22 @@ using System.Windows.Forms;
 
 namespace Game
 {
-    public partial class Load : Form
+    public partial class GameView : Form
     {
-        int time = 10;
-        public Load()
+        
+        public GameView()
         {
             InitializeComponent();
         }
 
         private void Start(object sender, EventArgs e)
         {
-            timer1.Start();
+
         }
 
         private void Update(object sender, EventArgs e)
         {
-            time--;
-            if(time == 0)
-            {
-                this.Hide();
-                new GameView().Show();
-            }
+
         }
     }
 }

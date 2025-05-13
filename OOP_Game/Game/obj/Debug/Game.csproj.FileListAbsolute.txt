@@ -10,3 +10,15 @@ D:\Game\Game\obj\Debug\Game.exe
 D:\Game\Game\obj\Debug\Game.pdb
 D:\Game\Game\obj\Debug\Game.Load.resources
 D:\Game\Game\obj\Debug\Game.GameView.resources
+D:\Game\OOP_Game\Game\bin\Debug\Game.exe.config
+D:\Game\OOP_Game\Game\bin\Debug\Game.exe
+D:\Game\OOP_Game\Game\bin\Debug\Game.pdb
+D:\Game\OOP_Game\Game\obj\Debug\Game.csproj.AssemblyReference.cache
+D:\Game\OOP_Game\Game\obj\Debug\Game.GameView.resources
+D:\Game\OOP_Game\Game\obj\Debug\Game.Load.resources
+D:\Game\OOP_Game\Game\obj\Debug\Game.MainMenu.resources
+D:\Game\OOP_Game\Game\obj\Debug\Game.Properties.Resources.resources
+D:\Game\OOP_Game\Game\obj\Debug\Game.csproj.GenerateResource.cache
+D:\Game\OOP_Game\Game\obj\Debug\Game.csproj.CoreCompileInputs.cache
+D:\Game\OOP_Game\Game\obj\Debug\Game.exe
+D:\Game\OOP_Game\Game\obj\Debug\Game.pdb
