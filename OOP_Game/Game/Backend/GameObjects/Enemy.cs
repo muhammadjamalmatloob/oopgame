@@ -8,11 +8,18 @@ using System.Windows.Forms;
 
 namespace Game.Backend.GameObjects
 {
+    
     public abstract class Enemy : Character 
     {
+        protected State state;
         public Enemy(PictureBox character) : base (character)
+        {
+            this.character = character;
+        }
+        public Enemy ()
         {
 
         }
+
     }
 }

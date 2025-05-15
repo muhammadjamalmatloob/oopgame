@@ -11,8 +11,8 @@ namespace Game.Backend.GameObjects
     public abstract class Character
     {
         protected PictureBox character;
-        protected int Speed = 15;
-        protected const int Gravity = 3;
+        protected int Speed = 20;
+        protected const int Gravity = 2;
 
         protected Character(PictureBox character)
         { 
@@ -28,12 +28,12 @@ namespace Game.Backend.GameObjects
             character.Location = new Point(X, Y);
         }
 
-        protected int X
+        public int X
         {
             get { return character.Location.X; }   
         }
             
-        protected int Y
+        public int Y
         {
             get { return character.Location.Y; }   
         }
@@ -42,6 +42,30 @@ namespace Game.Backend.GameObjects
         {
             character.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             character.BackColor = System.Drawing.Color.Transparent;
+        }
+
+        public void MoveLeft()
+        {
+            if (X - Speed <= 0)
+            {
+                Position(0, Y);
+            }
+            else
+            {
+                Position(X - Speed, Y);
+            }
+        }
+
+        public void MoveRight()
+        {
+            if (X + Speed >= 829)
+            {
+                Position(829, Y);
+            }
+            else
+            {
+                Position(X + Speed, Y);
+            }
         }
     }
 }
