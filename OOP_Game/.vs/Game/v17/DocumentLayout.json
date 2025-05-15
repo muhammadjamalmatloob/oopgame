@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "D:\\Game\\OOP_Game\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{EEA2943C-4446-4CD8-B1CB-73D8FF6CC7BB}|Game\\Game.csproj|d:\\game\\oop_game\\game\\backend\\gameobjects\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEA2943C-4446-4CD8-B1CB-73D8FF6CC7BB}|Game\\Game.csproj|solutionrelative:game\\backend\\gameobjects\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EEA2943C-4446-4CD8-B1CB-73D8FF6CC7BB}|Game\\Game.csproj|d:\\game\\oop_game\\game\\ui\\gameview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EEA2943C-4446-4CD8-B1CB-73D8FF6CC7BB}|Game\\Game.csproj|solutionrelative:game\\ui\\gameview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EEA2943C-4446-4CD8-B1CB-73D8FF6CC7BB}|Game\\Game.csproj|d:\\game\\oop_game\\game\\ui\\gameview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{EEA2943C-4446-4CD8-B1CB-73D8FF6CC7BB}|Game\\Game.csproj|d:\\game\\oop_game\\game\\backend\\gameobjects\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEA2943C-4446-4CD8-B1CB-73D8FF6CC7BB}|Game\\Game.csproj|solutionrelative:game\\backend\\gameobjects\\character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEA2943C-4446-4CD8-B1CB-73D8FF6CC7BB}|Game\\Game.csproj|D:\\Game\\OOP_Game\\game\\ui\\gameview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{EEA2943C-4446-4CD8-B1CB-73D8FF6CC7BB}|Game\\Game.csproj|solutionrelative:game\\ui\\gameview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EEA2943C-4446-4CD8-B1CB-73D8FF6CC7BB}|Game\\Game.csproj|d:\\game\\oop_game\\game\\backend\\softwareclasses\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EEA2943C-4446-4CD8-B1CB-73D8FF6CC7BB}|Game\\Game.csproj|D:\\Game\\OOP_Game\\game\\backend\\softwareclasses\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EEA2943C-4446-4CD8-B1CB-73D8FF6CC7BB}|Game\\Game.csproj|solutionrelative:game\\backend\\softwareclasses\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEA2943C-4446-4CD8-B1CB-73D8FF6CC7BB}|Game\\Game.csproj|d:\\game\\oop_game\\game\\ui\\gameview.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEA2943C-4446-4CD8-B1CB-73D8FF6CC7BB}|Game\\Game.csproj|solutionrelative:game\\ui\\gameview.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,20 +46,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
+              "Title": "GameView.Designer.cs",
+              "DocumentMoniker": "D:\\Game\\OOP_Game\\Game\\UI\\GameView.Designer.cs",
+              "RelativeDocumentMoniker": "Game\\UI\\GameView.Designer.cs",
+              "ToolTip": "D:\\Game\\OOP_Game\\Game\\UI\\GameView.Designer.cs",
+              "RelativeToolTip": "Game\\UI\\GameView.Designer.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAApwE4AAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T00:53:20.42Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Character.cs",
+              "DocumentMoniker": "D:\\Game\\OOP_Game\\Game\\Backend\\GameObjects\\Character.cs",
+              "RelativeDocumentMoniker": "Game\\Backend\\GameObjects\\Character.cs",
+              "ToolTip": "D:\\Game\\OOP_Game\\Game\\Backend\\GameObjects\\Character.cs",
+              "RelativeToolTip": "Game\\Backend\\GameObjects\\Character.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAASwA0AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T00:19:18.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "GameView.cs",
               "DocumentMoniker": "D:\\Game\\OOP_Game\\Game\\UI\\GameView.cs",
               "RelativeDocumentMoniker": "Game\\UI\\GameView.cs",
               "ToolTip": "D:\\Game\\OOP_Game\\Game\\UI\\GameView.cs",
               "RelativeToolTip": "Game\\UI\\GameView.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAASwBsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACYAAAAAAAAAAAAhwDgAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-13T17:45:40.969Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "GameView.cs [Design]",
               "DocumentMoniker": "D:\\Game\\OOP_Game\\Game\\UI\\GameView.cs",
               "RelativeDocumentMoniker": "Game\\UI\\GameView.cs",
@@ -59,15 +97,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "GameController.cs",
               "DocumentMoniker": "D:\\Game\\OOP_Game\\Game\\Backend\\SoftwareClasses\\GameController.cs",
               "RelativeDocumentMoniker": "Game\\Backend\\SoftwareClasses\\GameController.cs",
               "ToolTip": "D:\\Game\\OOP_Game\\Game\\Backend\\SoftwareClasses\\GameController.cs",
               "RelativeToolTip": "Game\\Backend\\SoftwareClasses\\GameController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-13T17:44:44.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Player.cs",
+              "DocumentMoniker": "D:\\Game\\OOP_Game\\Game\\Backend\\GameObjects\\Player.cs",
+              "RelativeDocumentMoniker": "Game\\Backend\\GameObjects\\Player.cs",
+              "ToolTip": "D:\\Game\\OOP_Game\\Game\\Backend\\GameObjects\\Player.cs",
+              "RelativeToolTip": "Game\\Backend\\GameObjects\\Player.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAhwBQAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-14T00:30:22.871Z",
               "EditorCaption": ""
             }
           ]

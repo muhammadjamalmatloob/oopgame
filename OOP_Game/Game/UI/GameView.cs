@@ -7,12 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Game.Backend.GameObjects;
+using Game.Backend.SoftwareClasses;
 
 namespace Game
 {
     public partial class GameView : Form
     {
-        
+        Player player = new Player();
+       
         public GameView()
         {
             InitializeComponent();
@@ -20,12 +23,39 @@ namespace Game
 
         private void Start(object sender, EventArgs e)
         {
-
+            player = new Player(player_pic, pFirePic);
+            timer1.Start();
+            
         }
 
         private void Update(object sender, EventArgs e)
-        {
+        {   
+            player.JumpController();
+            player.FireController();
+        }
 
+        
+
+        private void IsKeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Space && !(player.state == State.Jumping))
+            {
+                player.StartJump();
+
+            }
+            if (e.KeyCode == Keys.F && !(player.state == State.Firing) && !(player.state == State.Jumping))
+            {
+                player.StartFire();
+            }
+
+            if (e.KeyCode == Keys.Left)
+            {
+                player.MoveLeft();
+            }
+            if (e.KeyCode == Keys.Right)
+            {
+                player.MoveRight();
+            }
         }
     }
 }
