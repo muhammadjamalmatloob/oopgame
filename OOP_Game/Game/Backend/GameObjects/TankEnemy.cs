@@ -116,5 +116,13 @@ namespace Game.Backend.GameObjects
             }
 
         }
+
+        public void Collision(PictureBox enemy, PictureBox bullet, ProgressBar health)
+        {
+            if (bullet.Bounds.IntersectsWith(enemy.Bounds) && health.Value != 0)
+            {
+                health.Value -= 5;
+            }
+        }
     }
 }

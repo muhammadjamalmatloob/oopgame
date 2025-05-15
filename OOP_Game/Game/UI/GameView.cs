@@ -14,8 +14,10 @@ namespace Game
 {
     public partial class GameView : Form
     {
+        public bool isgameover = false;
         Player player = new Player();
         TankEnemy enemy = new TankEnemy();
+        int life = 3;
        
         public GameView()
         {
@@ -26,17 +28,39 @@ namespace Game
         {
             player = new Player(player_pic, pFirePic);
             enemy = new TankEnemy(TEnemy_pic,TEnemyFire_pic);
-            timer1.Start();
+            gameTimer.Start();
         }
 
         private void Update(object sender, EventArgs e)
         {   
             player.JumpController();
             player.FireController();
-            
-        }
 
-        
+            enemy.FireController(GameController.Enemy1Decider(enemy, player).fire);
+            enemy.MoveLeft(GameController.Enemy1Decider(enemy, player).left);
+            enemy.MoveRight(GameController.Enemy1Decider(enemy, player).right);
+            player.Collision(player_pic, TEnemyFire_pic, healthbar);
+            enemy.Collision(TEnemy_pic, pFirePic, enemyHealth);
+            if(healthbar.Value == 0 && life >= 0)
+            {
+                life--;
+                healthbar.Value = 100;
+                
+            }
+            if(life == 2)
+            {
+                life3.Visible = false;
+            }
+            if(life == 1)
+            {
+                life2.Visible = false;
+            }
+            if(life == 0)
+            {
+                life1.Visible = false;
+            }
+
+        }
 
         private void IsKeyDown(object sender, KeyEventArgs e)
         {

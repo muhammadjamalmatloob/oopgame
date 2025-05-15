@@ -124,6 +124,14 @@ namespace Game.Backend.GameObjects
             FireDistance = 0;
         }
 
+        public void Collision(PictureBox player,PictureBox bullet,ProgressBar health)
+        {
+            if(player.Bounds.IntersectsWith(bullet.Bounds) && health.Value != 0)
+            {
+                health.Value -= 5;
+            }
+        }
+
         
     }
     public enum State
