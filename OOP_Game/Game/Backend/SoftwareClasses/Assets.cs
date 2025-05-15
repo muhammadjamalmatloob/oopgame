@@ -26,6 +26,22 @@ namespace Game.Backend.SoftwareClasses
         public static Image Missile = Properties.Resources.missile;
         public static Image Player = Properties.Resources.Player;
         public static Image PlayerFire = Properties.Resources.PlayerFire;
+        public static Level level = Level.Easy;
+        public static Location location = Location.Location1;
+        public enum Location
+        { 
+            Location1,
+            Location2,
+            Location3,
+            Location4
+        }
+
+        public enum Level
+        {
+            Easy,
+            Medium, 
+            Hard
+        }
 
     }
 }

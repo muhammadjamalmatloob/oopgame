@@ -35,6 +35,7 @@ namespace Game
         {   
             player.JumpController();
             player.FireController();
+
             enemy.FireController(GameController.Enemy1Decider(enemy, player).fire);
             enemy.MoveLeft(GameController.Enemy1Decider(enemy, player).left);
             enemy.MoveRight(GameController.Enemy1Decider(enemy, player).right);
@@ -58,6 +59,7 @@ namespace Game
             {
                 life1.Visible = false;
             }
+
         }
 
         private void IsKeyDown(object sender, KeyEventArgs e)
