@@ -22,12 +22,12 @@ namespace Game.Backend.GameObjects
         private int fireSpeed = 30;
         private int FireDistance = 0;
 
-        protected int XF
+        public int XF
         {
             get { return fire.Location.X; }
         }
 
-        protected int YF
+        public int YF
         {
             get { return fire.Location.Y; }
         }
@@ -88,6 +88,7 @@ namespace Game.Backend.GameObjects
                 else
                 {
                     FireDistance += fireSpeed;
+                    fire.Top += 1;
                     FirePosition(XF + fireSpeed,YF);
                 }
             }
@@ -117,39 +118,21 @@ namespace Game.Backend.GameObjects
 
         public void ResetFire()
         {
+            fire.Top = 307;
             fire.Visible = false;
             fire.Left = character.Left + 156;
             FireDistance = 0;
         }
 
-        public void MoveLeft()
-        {
-            if (X - Speed <= 0)
-            {
-                Position(0, Y);
-            }
-            else
-            {
-                Position(X - Speed, Y);
-            }
-        }
-
-        public void MoveRight()
-        {
-            if (X + Speed >= 829)
-            {
-                Position(829, Y);
-            }
-            else
-            {
-                Position(X + Speed, Y);
-            }
-        }
+        
     }
     public enum State
     {
         Normal,
         Jumping,
         Firing,
+        Destroy,
+        Left,
+        Right
     }
 }

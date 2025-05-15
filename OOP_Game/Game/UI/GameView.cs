@@ -15,6 +15,7 @@ namespace Game
     public partial class GameView : Form
     {
         Player player = new Player();
+        TankEnemy enemy = new TankEnemy();
        
         public GameView()
         {
@@ -24,14 +25,17 @@ namespace Game
         private void Start(object sender, EventArgs e)
         {
             player = new Player(player_pic, pFirePic);
+            enemy = new TankEnemy(TEnemy_pic,TEnemyFire_pic);
             timer1.Start();
-            
         }
 
         private void Update(object sender, EventArgs e)
         {   
             player.JumpController();
             player.FireController();
+            enemy.FireController(GameController.Enemy1Decider(enemy, player).fire);
+            enemy.MoveLeft(GameController.Enemy1Decider(enemy, player).left);
+            enemy.MoveRight(GameController.Enemy1Decider(enemy, player).right);
         }
 
         
@@ -56,6 +60,13 @@ namespace Game
             {
                 player.MoveRight();
             }
+
+
+        }
+
+        private void life01_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

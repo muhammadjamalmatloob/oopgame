@@ -13,7 +13,7 @@ namespace Game
 {
     public partial class Load : Form
     {
-        int time = 10;
+        int time = 30;
         public Load()
         {
             InitializeComponent();
