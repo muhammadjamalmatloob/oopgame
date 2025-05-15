@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GameView));
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.gameTimer = new System.Windows.Forms.Timer(this.components);
             this.player_pic = new System.Windows.Forms.PictureBox();
             this.pFirePic = new System.Windows.Forms.PictureBox();
             this.TEnemy_pic = new System.Windows.Forms.PictureBox();
@@ -40,6 +40,8 @@
             this.healthbar = new System.Windows.Forms.ProgressBar();
             this.label1 = new System.Windows.Forms.Label();
             this.TEnemyFire_pic = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.enemyHealth = new System.Windows.Forms.ProgressBar();
             ((System.ComponentModel.ISupportInitialize)(this.player_pic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pFirePic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TEnemy_pic)).BeginInit();
@@ -49,9 +51,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.TEnemyFire_pic)).BeginInit();
             this.SuspendLayout();
             // 
-            // timer1
+            // gameTimer
             // 
-            this.timer1.Tick += new System.EventHandler(this.Update);
+            this.gameTimer.Tick += new System.EventHandler(this.Update);
             // 
             // player_pic
             // 
@@ -126,7 +128,7 @@
             this.healthbar.Name = "healthbar";
             this.healthbar.Size = new System.Drawing.Size(141, 23);
             this.healthbar.TabIndex = 6;
-            this.healthbar.Value = 80;
+            this.healthbar.Value = 100;
             // 
             // label1
             // 
@@ -152,6 +154,26 @@
             this.TEnemyFire_pic.TabStop = false;
             this.TEnemyFire_pic.Visible = false;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Orange;
+            this.label2.Location = new System.Drawing.Point(628, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(182, 28);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "ENEMY HEALTH";
+            // 
+            // enemyHealth
+            // 
+            this.enemyHealth.Location = new System.Drawing.Point(633, 40);
+            this.enemyHealth.Name = "enemyHealth";
+            this.enemyHealth.Size = new System.Drawing.Size(177, 23);
+            this.enemyHealth.TabIndex = 9;
+            this.enemyHealth.Value = 100;
+            // 
             // GameView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -159,6 +181,8 @@
             this.BackgroundImage = global::Game.Properties.Resources.Location1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(984, 561);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.enemyHealth);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.healthbar);
             this.Controls.Add(this.life3);
@@ -186,7 +210,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer gameTimer;
         private System.Windows.Forms.PictureBox player_pic;
         private System.Windows.Forms.PictureBox pFirePic;
         private System.Windows.Forms.PictureBox TEnemy_pic;
@@ -196,5 +220,7 @@
         private System.Windows.Forms.ProgressBar healthbar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox TEnemyFire_pic;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ProgressBar enemyHealth;
     }
 }
