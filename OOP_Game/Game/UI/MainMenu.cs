@@ -19,5 +19,16 @@ namespace Game
 
         }
 
+        private void label4_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            GameView gm = new GameView();
+            gm.Show();
+            this.Visible = false;
+        }
     }
 }

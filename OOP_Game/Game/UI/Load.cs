@@ -30,7 +30,7 @@ namespace Game
             if(time == 0)
             {
                 this.Hide();
-                new GameView().Show();
+                new MainMenu().Show();
             }
             
         }
