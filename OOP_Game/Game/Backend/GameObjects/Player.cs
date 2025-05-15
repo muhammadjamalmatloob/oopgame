@@ -16,7 +16,7 @@ namespace Game.Backend.GameObjects
     {
         public State state;
         private int initY;
-        private int JumpSpeed = 20;
+        private int JumpSpeed = 40;
         PictureBox fire;
         private int fireRange = 360;
         private int fireSpeed = 30;
@@ -129,6 +129,7 @@ namespace Game.Backend.GameObjects
             if(player.Bounds.IntersectsWith(bullet.Bounds) && health.Value != 0)
             {
                 health.Value -= 5;
+                player.Left += 5;
             }
         }
 

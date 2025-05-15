@@ -22,3 +22,15 @@ D:\Game\OOP_Game\Game\obj\Debug\Game.csproj.GenerateResource.cache
 D:\Game\OOP_Game\Game\obj\Debug\Game.csproj.CoreCompileInputs.cache
 D:\Game\OOP_Game\Game\obj\Debug\Game.exe
 D:\Game\OOP_Game\Game\obj\Debug\Game.pdb
+D:\FinalGame\oopgame\OOP_Game\Game\bin\Debug\Game.exe.config
+D:\FinalGame\oopgame\OOP_Game\Game\bin\Debug\Game.exe
+D:\FinalGame\oopgame\OOP_Game\Game\bin\Debug\Game.pdb
+D:\FinalGame\oopgame\OOP_Game\Game\obj\Debug\Game.csproj.AssemblyReference.cache
+D:\FinalGame\oopgame\OOP_Game\Game\obj\Debug\Game.GameView.resources
+D:\FinalGame\oopgame\OOP_Game\Game\obj\Debug\Game.Load.resources
+D:\FinalGame\oopgame\OOP_Game\Game\obj\Debug\Game.MainMenu.resources
+D:\FinalGame\oopgame\OOP_Game\Game\obj\Debug\Game.Properties.Resources.resources
+D:\FinalGame\oopgame\OOP_Game\Game\obj\Debug\Game.csproj.GenerateResource.cache
+D:\FinalGame\oopgame\OOP_Game\Game\obj\Debug\Game.csproj.CoreCompileInputs.cache
+D:\FinalGame\oopgame\OOP_Game\Game\obj\Debug\Game.exe
+D:\FinalGame\oopgame\OOP_Game\Game\obj\Debug\Game.pdb

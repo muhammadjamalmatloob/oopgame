@@ -11,7 +11,7 @@ namespace Game.Backend.GameObjects
     
     public abstract class Enemy : Character 
     {
-        protected State state;
+        public State state;
         public Enemy(PictureBox character) : base (character)
         {
             this.character = character;

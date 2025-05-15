@@ -15,10 +15,12 @@ namespace Game
     public partial class GameView : Form
     {
         public bool isgameover = false;
+        Random rand;
         Player player = new Player();
         TankEnemy enemy = new TankEnemy();
         int life = 3;
-       
+        int n;
+
         public GameView()
         {
             InitializeComponent();
@@ -27,37 +29,60 @@ namespace Game
         private void Start(object sender, EventArgs e)
         {
             player = new Player(player_pic, pFirePic);
-            enemy = new TankEnemy(TEnemy_pic,TEnemyFire_pic);
+            enemy = new TankEnemy(TEnemy_pic, TEnemyFire_pic);
+            rand = new Random();
             gameTimer.Start();
         }
 
         private void Update(object sender, EventArgs e)
-        {   
+        {
+            int n = rand.Next(0, 9);
             player.JumpController();
             player.FireController();
-
-            enemy.FireController(GameController.Enemy1Decider(enemy, player).fire);
-            enemy.MoveLeft(GameController.Enemy1Decider(enemy, player).left);
-            enemy.MoveRight(GameController.Enemy1Decider(enemy, player).right);
+            enemy.FireController();
+            if (enemy.X - 500 >= player.X)
+            {
+                enemy.MoveLeft();
+            }
+            else if (n < 4 && enemy.X - 350 >= player.X)
+            {
+                enemy.MoveLeft();
+                if (enemy.state != State.Firing)
+                {
+                    enemy.StartFire();
+                }
+            }
+            else if (n >= 4 && player.X < 829)
+            {
+                enemy.MoveRight();
+            }
+            else if (enemy.state != State.Firing)
+            {
+                enemy.StartFire();
+            }
             player.Collision(player_pic, TEnemyFire_pic, healthbar);
             enemy.Collision(TEnemy_pic, pFirePic, enemyHealth);
-            if(healthbar.Value == 0 && life >= 0)
+            if (healthbar.Value == 0 && life >= 0)
             {
                 life--;
                 healthbar.Value = 100;
-                
+
             }
-            if(life == 2)
+            if (life == 2)
             {
                 life3.Visible = false;
             }
-            if(life == 1)
+            if (life == 1)
             {
                 life2.Visible = false;
             }
-            if(life == 0)
+            if (life == 0)
             {
                 life1.Visible = false;
+            }
+            if (enemyHealth.Value == 0)
+            {
+
             }
 
         }
@@ -90,5 +115,7 @@ namespace Game
         {
 
         }
+
+        
     }
 }

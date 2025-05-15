@@ -14,7 +14,7 @@ namespace Game.Backend.GameObjects
     {
         PictureBox fire;
         private int fireRange = 360;
-        private int fireSpeed = 30;
+        private int fireSpeed = 15;
         private int FireDistance = 0;
         public int moveright = 0;
         public int moveleft = 0;
@@ -54,19 +54,14 @@ namespace Game.Backend.GameObjects
 
         public void StartFire()
         {
-            
+            ResetFire();
+            state = State.Firing;
+            fire.Visible = true;
         }
 
-        public void FireController(bool condition)
+        public void FireController()
         {
-            if (condition)
-            {
-                if (state != State.Firing)
-                {
-                    ResetFire();
-                    state = State.Firing;
-                    fire.Visible = true;
-                }
+            
                 if (state == State.Firing)
                 {
                     if (FireDistance + fireSpeed > fireRange)
@@ -80,7 +75,7 @@ namespace Game.Backend.GameObjects
                         FirePosition(XF - fireSpeed, YF);
                     }
                 }
-            }
+            
         }
 
         public void ResetFire()
@@ -90,32 +85,7 @@ namespace Game.Backend.GameObjects
             FireDistance = 0;
         }
 
-        public void MoveLeft(bool condition)
-        {
-            if (moveleft == 30)
-            {
-                moveleft = 0;
-            }
-            if (condition && moveright == 0)
-            {
-                moveleft++;
-                base.MoveLeft();
-            }
-            
-        }
-        public void MoveRight(bool condition)
-        {
-            if (moveright == 20)
-            {
-                moveright = 0;
-            }
-            if (condition && moveleft == 0)
-            {
-                moveright++;
-                base.MoveRight();
-            }
-
-        }
+        
 
         public void Collision(PictureBox enemy, PictureBox bullet, ProgressBar health)
         {
