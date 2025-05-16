@@ -118,7 +118,7 @@ namespace Game.Backend.GameObjects
 
         public void ResetFire()
         {
-            fire.Top = 307;
+            fire.Top = character.Top;
             fire.Visible = false;
             fire.Left = character.Left + 156;
             FireDistance = 0;

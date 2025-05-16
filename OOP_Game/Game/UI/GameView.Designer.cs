@@ -42,6 +42,8 @@
             this.TEnemyFire_pic = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.enemyHealth = new System.Windows.Forms.ProgressBar();
+            this.win = new System.Windows.Forms.Label();
+            this.lose = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.player_pic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pFirePic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TEnemy_pic)).BeginInit();
@@ -53,10 +55,13 @@
             // 
             // gameTimer
             // 
+            this.gameTimer.Enabled = true;
+            this.gameTimer.Interval = 5;
             this.gameTimer.Tick += new System.EventHandler(this.Update);
             // 
             // player_pic
             // 
+            this.player_pic.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.player_pic.BackColor = System.Drawing.Color.Transparent;
             this.player_pic.Image = ((System.Drawing.Image)(resources.GetObject("player_pic.Image")));
             this.player_pic.Location = new System.Drawing.Point(70, 323);
@@ -68,6 +73,7 @@
             // 
             // pFirePic
             // 
+            this.pFirePic.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.pFirePic.BackColor = System.Drawing.Color.Transparent;
             this.pFirePic.Image = global::Game.Properties.Resources.PlayerFire;
             this.pFirePic.Location = new System.Drawing.Point(226, 307);
@@ -79,6 +85,7 @@
             // 
             // TEnemy_pic
             // 
+            this.TEnemy_pic.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.TEnemy_pic.BackColor = System.Drawing.Color.Transparent;
             this.TEnemy_pic.Image = global::Game.Properties.Resources.Enemy1;
             this.TEnemy_pic.Location = new System.Drawing.Point(712, 323);
@@ -90,6 +97,7 @@
             // 
             // life2
             // 
+            this.life2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.life2.BackColor = System.Drawing.Color.Transparent;
             this.life2.Image = global::Game.Properties.Resources.Life;
             this.life2.Location = new System.Drawing.Point(878, 12);
@@ -102,6 +110,7 @@
             // 
             // life1
             // 
+            this.life1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.life1.BackColor = System.Drawing.Color.Transparent;
             this.life1.Image = global::Game.Properties.Resources.Life;
             this.life1.Location = new System.Drawing.Point(828, 12);
@@ -113,6 +122,7 @@
             // 
             // life3
             // 
+            this.life3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.life3.BackColor = System.Drawing.Color.Transparent;
             this.life3.Image = global::Game.Properties.Resources.Life;
             this.life3.Location = new System.Drawing.Point(928, 12);
@@ -144,6 +154,7 @@
             // 
             // TEnemyFire_pic
             // 
+            this.TEnemyFire_pic.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.TEnemyFire_pic.BackColor = System.Drawing.Color.Transparent;
             this.TEnemyFire_pic.Image = global::Game.Properties.Resources.Enemy1Fire;
             this.TEnemyFire_pic.Location = new System.Drawing.Point(683, 340);
@@ -156,6 +167,7 @@
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -168,11 +180,44 @@
             // 
             // enemyHealth
             // 
+            this.enemyHealth.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.enemyHealth.Location = new System.Drawing.Point(633, 40);
             this.enemyHealth.Name = "enemyHealth";
             this.enemyHealth.Size = new System.Drawing.Size(177, 23);
             this.enemyHealth.TabIndex = 9;
             this.enemyHealth.Value = 100;
+            // 
+            // win
+            // 
+            this.win.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.win.AutoSize = true;
+            this.win.BackColor = System.Drawing.Color.Transparent;
+            this.win.Font = new System.Drawing.Font("Stencil", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.win.ForeColor = System.Drawing.Color.ForestGreen;
+            this.win.Location = new System.Drawing.Point(270, 162);
+            this.win.Name = "win";
+            this.win.Size = new System.Drawing.Size(298, 76);
+            this.win.TabIndex = 11;
+            this.win.Text = "YOU WIN";
+            this.win.Visible = false;
+            // 
+            // lose
+            // 
+            this.lose.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lose.AutoSize = true;
+            this.lose.BackColor = System.Drawing.Color.Transparent;
+            this.lose.Font = new System.Drawing.Font("Stencil", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lose.ForeColor = System.Drawing.Color.Maroon;
+            this.lose.Location = new System.Drawing.Point(270, 196);
+            this.lose.Name = "lose";
+            this.lose.Size = new System.Drawing.Size(327, 76);
+            this.lose.TabIndex = 12;
+            this.lose.Text = "YOU LOSE";
+            this.lose.Visible = false;
             // 
             // GameView
             // 
@@ -181,6 +226,8 @@
             this.BackgroundImage = global::Game.Properties.Resources.Location1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(984, 561);
+            this.Controls.Add(this.lose);
+            this.Controls.Add(this.win);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.enemyHealth);
             this.Controls.Add(this.label1);
@@ -222,5 +269,7 @@
         private System.Windows.Forms.PictureBox TEnemyFire_pic;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ProgressBar enemyHealth;
+        private System.Windows.Forms.Label win;
+        private System.Windows.Forms.Label lose;
     }
 }
