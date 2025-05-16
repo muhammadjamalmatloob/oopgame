@@ -18,7 +18,7 @@ namespace Game
         Random rand;
         Player player = new Player();
         TankEnemy enemy = new TankEnemy();
-        int life = 3;
+        int life = 4;
         int n;
 
         public GameView()
@@ -28,6 +28,8 @@ namespace Game
 
         private void Start(object sender, EventArgs e)
         {
+            win.Visible = false;
+            lose.Visible = false;
             player = new Player(player_pic, pFirePic);
             enemy = new TankEnemy(TEnemy_pic, TEnemyFire_pic);
             rand = new Random();
@@ -78,11 +80,17 @@ namespace Game
             }
             if (life == 0)
             {
+
                 life1.Visible = false;
+                isgameover = true;
+                gameTimer.Stop();
+                lose.Visible = true;
             }
             if (enemyHealth.Value == 0)
             {
-
+                isgameover = true;
+                gameTimer.Stop();
+                win.Visible = true;
             }
 
         }
@@ -106,6 +114,12 @@ namespace Game
             if (e.KeyCode == Keys.Right)
             {
                 player.MoveRight();
+            }
+            if(e.KeyCode == Keys.Enter && isgameover== true)
+            {
+                MainMenu mm = new MainMenu();
+                mm.Show();
+                this.Visible = false;
             }
 
 

@@ -67,5 +67,10 @@ namespace Game.Backend.GameObjects
                 Position(X + Speed, Y);
             }
         }
+
+        public void MoveDown(PictureBox picture)
+        {
+            picture.Left -= Speed;
+        }
     }
 }
